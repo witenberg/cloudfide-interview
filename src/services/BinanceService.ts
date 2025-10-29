@@ -38,7 +38,6 @@ export class BinanceService {
                 return [];
             }
 
-            // TODO transform data to Kline[]
             return data.map(this.transformDataToKline);
         }
         catch (error) {

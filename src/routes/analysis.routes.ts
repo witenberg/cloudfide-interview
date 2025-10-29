@@ -3,6 +3,9 @@ import { BinanceService } from "../services/BinanceService";
 import { AnalysisRepository } from "../repositories/AnalysisRepository";
 import { AnalysisService } from "../services/AnalysisService";
 import { AnalysisController } from "../controllers/AnalysisController";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const router = Router();
 
