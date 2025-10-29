@@ -20,6 +20,7 @@ export class AnalysisController {
             // validate query parameters
             const { symbol, interval, limit = 100 } = req.query;
 
+
             if (!symbol || typeof symbol !== 'string') {
                 return res.status(400).json({ error: "Symbol is required" });
             }
